@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "乐不学",
+  "filename": "乐不学.apk",
+  "version": "0.1.14",
+  "build": 15,
+  "size_bytes": 12080283,
+  "sha256": "a7644708145871ec974ff6ec57f78fecbb5088c2f476920a14f2362f76383426",
+  "source_repository": "cicfish/le-bu-xue-android-source",
+  "source_commit": "4b2f850ec23e736853cec5e87e3e5d13c4b4aac1",
+  "build_date": "2026-10-20",
+  "original_storage_compatible": true,
+  "update_mode": "cover existing installation; preserve existing data directories",
+  "automatic_update_enabled_by_this_publication": false,
+  "application_id": "cn.cicfish.lebuxue",
+  "signing_certificate_sha256": "7b940e8ed34977c75985c47f611f6faa653a0ada1a3a8c423916a6b6d9cc8a35"
+}

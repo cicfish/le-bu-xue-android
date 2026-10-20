@@ -1,0 +1,7 @@
+*.log
+*.tmp
+*.bak
+.signing/
+*.keystore
+*.jks
+*备份*.json
