@@ -1,0 +1,25 @@
+{
+  "version": "0.1.15",
+  "version_code": 16,
+  "application_id": "cn.cicfish.lebuxue",
+  "date": "2026-10-22",
+  "sha256": "402726448d03352d9f44130938fa5fd871334ba082741fb25c659cce4322dddc",
+  "size_bytes": 12080283,
+  "signing_certificate_sha256": "7b940e8ed34977c75985c47f611f6faa653a0ada1a3a8c423916a6b6d9cc8a35",
+  "reported_failure": "0.1.14 LoginActivity.kt:79 NullPointerException while acquiring the window insets controller before content attachment",
+  "fix": "Apply unchanged light system-bar styling after attachment; use the nullable View controller on API 30+",
+  "unit_tests": { "passed": 34, "failed": 0 },
+  "release_instrumentation": {
+    "device": "isolated Android 12 emulator",
+    "previous_release": "0.1.14 (15)",
+    "cover_install_without_uninstall_or_clear": true,
+    "old_release_fixture_seed_passed": true,
+    "new_release_fixture_verification_passed": true,
+    "verified": ["task IDs, text, due dates and completion states", "attachment metadata and exact bytes", "course, item, timetable and exam cache JSON", "reminder rule JSON", "wallpaper configuration and bytes", "two cold ViewModels", "interleaved reloads and task writes", "two cold MainActivity launches and visible cached pending tasks/items with scrolling"],
+    "login_tests_passed": 8,
+    "login_cases": ["system-bar appearance after attachment and recreation", "Activity context and private diagnostics", "campus route failure recovery", "native startup retry", "recreate and reopen", "renderer-process crash recovery", "keyboard and middle editing", "account/password input order and contrast"]
+  },
+  "storage_contract": { "database": "board.db", "database_version": 1, "changed": false, "signing_key_changed": false },
+  "boundaries": ["No real vivo/iQOO or Android 16 device run", "The user's diagnostic identifies the old failure call, but subsequent real-device login behavior remains unverified", "No real campus-account authentication was performed", "Emulator results are not a guarantee for every vendor system"],
+  "logs": "Local work/android-vivo-login-0.1.15 contains build, formal seed/upgrade/login logs, XML trees and screenshots; user credentials are not part of test fixtures."
+}
